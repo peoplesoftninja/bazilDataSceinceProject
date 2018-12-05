@@ -17,7 +17,7 @@ def evaluate(reader, dates):
 
 
 if __name__ == "__main__":
-    reader = pd.read_csv('PyBank/Resources/budget_data.csv', parse_dates=True)
+    reader = pd.read_csv(r'../PyBank/Resources/budget_data.csv', parse_dates=True)
     dates = pd.DataFrame(reader)
     evaluate(reader, dates)
     sys.stdout = open('output.txt', 'w')
